@@ -41,9 +41,9 @@ describe('AUtils', function () {
   } else {
     describe('find linux executable', function () {
       describe("when using linux 'which' to find programs", function () {
-        it('ifconfig should be found once', function () {
+        it('`ls` should be found once', function () {
 
-          var file = utils.searchForExecutable("ifconfig");
+          var file = utils.searchForExecutable("ls");
 
           utils.assertFileExists(file);
         });
